@@ -4,4 +4,6 @@
     <string name="btn2_name">Back!</string>
     <string name="btn3_name">Toast!</string>
     <string name="btn4_name">Alert!</string>
+    <string name="btn5_name">AlertList!</string>
+    <string name="pick_mood">Mood Select!</string>
 </resources>

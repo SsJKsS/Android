@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btn_submit = findViewById(R.id.btn_btn1);
     }
 
     public void bmi(View view){
@@ -63,18 +62,45 @@ public class MainActivity extends AppCompatActivity {
         builder.setTitle("Alert!");
         builder.setMessage("Alert Test");
         builder.setIcon(R.mipmap.ic_launcher_round);
-        builder.setPositiveButton("取消", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(MainActivity.this, "你點選了取消", Toast.LENGTH_SHORT).show();
-                        dialog.dismiss();
-               }
-        });
-        builder.setNegativeButton("是的", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("是的", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(MainActivity.this, "你點選了是的", Toast.LENGTH_SHORT).show();
                         dialog.dismiss();
+               }
+        });
+        builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(MainActivity.this, "你點選了取消", Toast.LENGTH_SHORT).show();
+                        dialog.dismiss();
                     }
                 });
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+    public void alert2(View view){
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.pick_mood)
+               .setItems(R.array.mood, new DialogInterface.OnClickListener() {
+                   @Override
+                   public void onClick(DialogInterface dialog, int which) {
+                       // which 參數為使用者點擊哪一個(0, 1 or 2)
+                       switch (which){
+                           case 0:
+                               Toast.makeText(MainActivity.this, "Happy", Toast.LENGTH_LONG).show();
+                               break;
+                           case 1:
+                               Toast.makeText(MainActivity.this, "Mad", Toast.LENGTH_LONG).show();
+                               break;
+                           case 2:
+                               Toast.makeText(MainActivity.this, "Sad", Toast.LENGTH_LONG).show();
+                               break;
+                           default:
+                               break;
+                       }
+                   }
+               });
         AlertDialog dialog = builder.create();
         dialog.show();
     }

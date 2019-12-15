@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void alert(View view){
 
-        Button btn_dialog = findViewById(R.id.btn_btn4);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Alert!");
         builder.setMessage("Alert Test");
@@ -88,13 +87,13 @@ public class MainActivity extends AppCompatActivity {
                        // which 參數為使用者點擊哪一個(0, 1 or 2)
                        switch (which){
                            case 0:
-                               Toast.makeText(MainActivity.this, "Happy", Toast.LENGTH_LONG).show();
+                               Toast.makeText(MainActivity.this, R.string.mood1, Toast.LENGTH_LONG).show();
                                break;
                            case 1:
-                               Toast.makeText(MainActivity.this, "Mad", Toast.LENGTH_LONG).show();
+                               Toast.makeText(MainActivity.this, R.string.mood2, Toast.LENGTH_LONG).show();
                                break;
                            case 2:
-                               Toast.makeText(MainActivity.this, "Sad", Toast.LENGTH_LONG).show();
+                               Toast.makeText(MainActivity.this, R.string.mood3, Toast.LENGTH_LONG).show();
                                break;
                            default:
                                break;

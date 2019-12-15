@@ -6,4 +6,20 @@
     <string name="btn4_name">Alert!</string>
     <string name="btn5_name">AlertList!</string>
     <string name="pick_mood">Mood Select!</string>
+    <string name="mood1">Happy</string>
+    <string name="mood2">Mad</string>
+    <string name="mood3">Sad</string>
+    <string-array name="gender_list">
+        <item>---性別---</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="maleAgeLess18">\u003C 18</string>
+    <string name="maleAgeGreater18">\u003E 18</string>
+    <string name="femaleAgeLess16">\u003C 16</string>
+    <string name="femaleAgeGreater16">\u003E 16</string>
+    <string name="tvAge">Age : </string>
+    <string name="tvGender">Gender : </string>
+    <string name="radbtnGenderMale">Male</string>
+    <string name="radbtnGenderFemale">Female</string>
 </resources>

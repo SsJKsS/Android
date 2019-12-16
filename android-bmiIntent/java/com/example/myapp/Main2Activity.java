@@ -31,7 +31,7 @@ public class Main2Activity extends AppCompatActivity {
         Spinner spnGender = findViewById(R.id.spn1);
         spnGender.setOnItemSelectedListener(spnGenderOnItemSelected);
 
-        radGrpAge = findViewById(R.id.radGrpAge);
+        radGrpAge = findViewById(R.id.radGrpGender);
         radBtnAge1 = findViewById(R.id.radBtnAge1);
         radBtnAge2 = findViewById(R.id.radBtnAge2);
         radGrpAge.setOnCheckedChangeListener(radGrpAgeOnCheckedChange);

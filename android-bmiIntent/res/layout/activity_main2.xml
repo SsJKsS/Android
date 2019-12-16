@@ -59,36 +59,6 @@
         android:id="@+id/radGrpGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@+id/radGrpAge"
-        app:layout_constraintTop_toBottomOf="@+id/tv_age">
-
-        <RadioButton
-            android:id="@+id/radBtnAge1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/maleAgeLess18"
-            app:layout_constraintEnd_toEndOf="@+id/radBtnAge2"
-            app:layout_constraintStart_toStartOf="@+id/radBtnAge2"
-            tools:layout_conversion_absoluteHeight="32dp"
-            tools:layout_conversion_absoluteWidth="59dp"
-            tools:layout_editor_absoluteX="109dp"
-            tools:layout_editor_absoluteY="224dp" />
-
-        <RadioButton
-            android:id="@+id/radBtnAge2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/maleAgeGreater18"
-            tools:layout_conversion_absoluteHeight="32dp"
-            tools:layout_conversion_absoluteWidth="59dp"
-            tools:layout_editor_absoluteX="109dp"
-            tools:layout_editor_absoluteY="256dp" />
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/radGrpAge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView7">
 
@@ -103,6 +73,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/radbtnGenderFemale" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radGrpAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/radGrpGender"
+        app:layout_constraintTop_toBottomOf="@+id/tv_age">
+
+        <RadioButton
+            android:id="@+id/radBtnAge1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/maleAgeLess18" />
+
+        <RadioButton
+            android:id="@+id/radBtnAge2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/maleAgeGreater18" />
     </RadioGroup>
 
     <TextView

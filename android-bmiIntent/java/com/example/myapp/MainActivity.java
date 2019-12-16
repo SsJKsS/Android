@@ -13,10 +13,15 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button btnPicker;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        btnPicker = findViewById(R.id.btn_btn6);
+        btnPicker.setOnClickListener(btnPickerOnClick);
     }
 
     public void bmi(View view){
@@ -103,4 +108,11 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.show();
     }
+
+    private View.OnClickListener btnPickerOnClick = new View.OnClickListener(){
+        public void onClick(View view){
+            Intent intent = new Intent(MainActivity.this, Main3Activity.class);
+            startActivity(intent);
+        }
+    };
 }

@@ -43,7 +43,36 @@ public class Main4Activity extends AppCompatActivity {
         public View.OnClickListener btnOnClick = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if ()
+                String s = getString(R.string.hobbyResult);
+
+                if (chkBoxMusic.isChecked())
+                    s += chkBoxMusic.getText().toString();
+                if (chkBoxSing.isChecked())
+                    s += chkBoxSing.getText().toString();
+                if (chkBoxDance.isChecked())
+                    s += chkBoxDance.getText().toString();
+                if (chkBoxTravel.isChecked())
+                    s += chkBoxTravel.getText().toString();
+                if (chkBoxReading.isChecked())
+                    s += chkBoxReading.getText().toString();
+                if (chkBoxWriting.isChecked())
+                    s += chkBoxWriting.getText().toString();
+                if (chkBoxClimbing.isChecked())
+                    s += chkBoxClimbing.getText().toString();
+                if (chkBoxSwimming.isChecked())
+                    s += chkBoxSwimming.getText().toString();
+                if (chkBoxExercise.isChecked())
+                    s += chkBoxExercise.getText().toString();
+                if (chkBoxFitness.isChecked())
+                    s += chkBoxFitness.getText().toString();
+                if (chkBoxPhoto.isChecked())
+                    s += chkBoxPhoto.getText().toString();
+                if (chkBoxFood.isChecked())
+                    s += chkBoxFood.getText().toString();
+                if (chkBoxPainting.isChecked())
+                    s += chkBoxPainting.getText().toString();
+
+                tvHobbyResult.setText(s);
             }
         };
 }

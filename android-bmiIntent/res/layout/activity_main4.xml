@@ -1,123 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.myapp.Main4Activity">
 
-    <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        app:layout_constraintStart_toStartOf="parent"
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <CheckBox
+            android:id="@+id/chkBoxMusic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:text="@string/chkboxMusic"
+            android:textSize="36sp" />
 
-            <CheckBox
-                android:textSize="36sp"
-                android:id="@+id/chkBoxMusic"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chkboxMusic" />
+        <CheckBox
+            android:id="@+id/chkBoxSing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chkboxSing"
+            android:textSize="36sp" />
 
-            <CheckBox
-                android:textSize="36sp"
-                android:id="@+id/chkBoxSing"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chkboxSing" />
+        <CheckBox
+            android:id="@+id/chkBoxDance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chkboxDance"
+            android:textSize="36sp" />
 
-            <CheckBox
-                android:textSize="36sp"
-                android:id="@+id/chkBoxDance"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chkboxDance" />
+        <CheckBox
+            android:id="@+id/chkBoxTravel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chkboxTravel"
+            android:textSize="36sp" />
 
-            <CheckBox
-                android:textSize="36sp"
-                android:id="@+id/chkBoxTravel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chkboxTravel" />
+        <CheckBox
+            android:id="@+id/chkBoxReading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chkboxReading"
+            android:textSize="36sp" />
 
-            <CheckBox
-                android:textSize="36sp"
-                android:id="@+id/chkBoxReading"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chkboxReading" />
+        <CheckBox
+            android:id="@+id/chkBoxWriting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chkboxWriting"
+            android:textSize="36sp" />
 
-            <CheckBox
-                android:textSize="36sp"
-                android:id="@+id/chkBoxWriting"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chkboxWriting" />
+        <CheckBox
+            android:id="@+id/chkBoxClimbing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chkboxClimbing"
+            android:textSize="36sp" />
 
-            <CheckBox
-                android:textSize="36sp"
-                android:id="@+id/chkBoxClimbing"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chkboxClimbing" />
+        <CheckBox
+            android:id="@+id/chkBoxSwimming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chkboxSwimming"
+            android:textSize="36sp" />
 
-            <CheckBox
-                android:textSize="36sp"
-                android:id="@+id/chkBoxSwimming"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chkboxSwimming" />
+        <CheckBox
+            android:id="@+id/chkBoxExercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chkboxExercise"
+            android:textSize="36sp" />
 
-            <CheckBox
-                android:textSize="36sp"
-                android:id="@+id/chkBoxExercise"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chkboxExercise" />
+        <CheckBox
+            android:id="@+id/chkBoxFitness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chkboxFitness"
+            android:textSize="36sp" />
 
-            <CheckBox
-                android:textSize="36sp"
-                android:id="@+id/chkBoxFitness"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chkboxFitness" />
+        <CheckBox
+            android:id="@+id/chkBoxPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chkboxPhoto"
+            android:textSize="36sp" />
 
-            <CheckBox
-                android:textSize="36sp"
-                android:id="@+id/chkBoxPhoto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chkboxPhoto" />
+        <CheckBox
+            android:id="@+id/chkBoxFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chkboxFood"
+            android:textSize="36sp" />
 
-            <CheckBox
-                android:textSize="36sp"
-                android:id="@+id/chkBoxFood"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chkboxFood" />
+        <CheckBox
+            android:id="@+id/chkBoxPainting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chkboxPainting"
+            android:textSize="36sp" />
 
-            <CheckBox
-                android:textSize="36sp"
-                android:id="@+id/chkBoxPainting"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/chkboxPainting" />
+        <Button
+            android:id="@+id/btn_btn8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnHobbbyConfirm" />
 
-            <Button
-                android:id="@+id/btn_btn8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/btnHobbbyConfirm" />
-
-            <TextView
-                android:id="@+id/tv_hobbyResult"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-    </ScrollView>
+        <TextView
+            android:textSize="24sp"
+            android:id="@+id/tv_hobbyResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

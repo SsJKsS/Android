@@ -153,5 +153,13 @@
             app:layout_constraintStart_toStartOf="@+id/btn_btn1"
             app:layout_constraintTop_toBottomOf="@+id/ed_weight" />
 
+        <Button
+            android:id="@+id/btn_btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox"
+            app:layout_constraintStart_toStartOf="@+id/btn_btn4"
+            app:layout_constraintTop_toBottomOf="@+id/ed_weight" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

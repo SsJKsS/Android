@@ -13,7 +13,7 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnPicker;
+    public Button btnPicker, btnCheckBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         btnPicker = findViewById(R.id.btn_btn6);
         btnPicker.setOnClickListener(btnPickerOnClick);
+        btnCheckBox = findViewById(R.id.btn_btn7);
+        btnCheckBox.setOnClickListener(btnCheckBoxOnClick);
     }
 
     public void bmi(View view){
@@ -109,9 +111,17 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
 
-    private View.OnClickListener btnPickerOnClick = new View.OnClickListener(){
+    public View.OnClickListener btnPickerOnClick = new View.OnClickListener(){
         public void onClick(View view){
             Intent intent = new Intent(MainActivity.this, Main3Activity.class);
+            startActivity(intent);
+        }
+    };
+    
+    public View.OnClickListener btnCheckBoxOnClick = new View.OnClickListener(){
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(MainActivity.this, Main4Activity.class);
             startActivity(intent);
         }
     };

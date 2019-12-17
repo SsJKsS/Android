@@ -22,4 +22,19 @@
     <string name="tvGender">Gender : </string>
     <string name="radbtnGenderMale">Male</string>
     <string name="radbtnGenderFemale">Female</string>
-</resources>
+    <string name="chkboxMusic">音樂</string>
+    <string name="chkboxSing">唱歌</string>
+    <string name="chkboxDance">跳舞</string>
+    <string name="chkboxTravel">旅遊</string>
+    <string name="chkboxReading">閱讀</string>
+    <string name="chkboxWriting">寫作</string>
+    <string name="chkboxClimbing">爬山</string>
+    <string name="chkboxSwimming">游泳</string>
+    <string name="chkboxExercise">運動</string>
+    <string name="chkboxFitness">健身</string>
+    <string name="chkboxPhoto">照相</string>
+    <string name="chkboxFood">美食</string>
+    <string name="chkboxPainting">繪畫</string>
+    <string name="btnHobbbyConfirm">確認</string>
+    <string name="你的興趣是">確認</string>
+    </resources>

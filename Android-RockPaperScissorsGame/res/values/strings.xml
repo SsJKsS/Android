@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">猜拳遊戲</string>
+    <string name="tv_title">猜拳遊戲</string>
+    <string name="tv_comTitle">電腦出拳</string>
+    <string name="tv_playerTitle">玩家出拳</string>
+    <string name="tv_com">剪刀</string>
+    <string name="btn_scissors">剪刀</string>
+    <string name="btn_rock">石頭</string>
+    <string name="btn_paper">布</string>
+    <string name="tv_drawResult">Draw!</string>
+    <string name="tv_winResult">Win!</string>
+    <string name="tv_loseResult">Lose!</string>
+</resources>

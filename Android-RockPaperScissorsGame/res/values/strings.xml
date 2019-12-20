@@ -7,7 +7,7 @@
     <string name="btn_scissors">剪刀</string>
     <string name="btn_rock">石頭</string>
     <string name="btn_paper">布</string>
-    <string name="tv_drawResult">Draw!</string>
-    <string name="tv_winResult">Win!</string>
-    <string name="tv_loseResult">Lose!</string>
+    <string name="tv_drawResult"> You Draw!</string>
+    <string name="tv_winResult">You Win!</string>
+    <string name="tv_loseResult">You Lose!</string>
 </resources>
